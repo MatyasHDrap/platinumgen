@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma Plateada</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Plataforma Plateada</h1>
+    <p>Inclusión digital para adultos mayores</p>
+    <button id="modeToggle">🌙 / ☀️</button>
+  </header>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="foro.html">Foro</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+      <li><a href="calendario.html">Calendario</a></li>
+      <li><a href="asistencia.html">Asistencia</a></li>
+      <li><a href="participar.html">Participar</a></li>
+      <li><a href="contacto.html">Contáctenos</a></li>
+    </ul>
+  </nav>
+  <section class="main scroll-reveal">
+    <h2>Bienvenido a Plataforma Plateada</h2>
+    <p>Explora talleres, foros, asistencia personalizada y mucho más.</p>
+    <img src="https://cdn.aarp.net/content/dam/aarp/home-and-family/personal-technology/2019/09/1140-senior-computer-son-esp.jpg" alt="Adulto mayor usando tecnología" class="main-img">
+  </section>
+  <div id="chat-container">
+    <div id="chat-header" onclick="toggleChat()">💬 Ayuda</div>
+    <div id="chat-box" style="display:none;">
+      <div class="chat-log" id="chat-log"></div>
+      <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+      <button onclick="sendChat()">Enviar</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Plataforma Plateada</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); color: var(--fg); }
+:root { --bg: #fff; --fg: #333; --primary: #4a6fa5; }
+body.dark { --bg: #1e1e1e; --fg: #f0f0f0; --primary: #6fa5d1; }
+header { background: var(--primary); color: white; text-align: center; padding: 1.5em; position: relative; }
+#modeToggle { position: absolute; top: 20px; right: 20px; background: white; color: var(--primary); border: none; padding: 0.4em 0.6em; border-radius: 5px; cursor: pointer; }
+nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; padding: 0; background: var(--bg); }
+nav ul li { margin: 0.5em; }
+nav ul li a { color: var(--primary); text-decoration: none; font-weight: bold; }
+.menu-toggle { display: none; position: absolute; top: 1em; left: 1em; font-size: 2rem; background: none; border: none; color: var(--primary); }
+section { padding: 2em; max-width: 900px; margin: auto; }
+.main-img { display: block; margin: 1em auto; max-width: 90%; border-radius: 10px; }
+footer { background: var(--primary); color: white; text-align: center; padding: 1em; margin-top: 2em; }
+#chat-container { position: fixed; bottom: 10px; right: 10px; width: 300px; font-size: 0.9em; }
+#chat-header { background: var(--primary); color: white; padding: 0.5em; cursor: pointer; border-radius: 8px 8px 0 0; }
+#chat-box { background: var(--bg); border: 1px solid var(--primary); border-top: none; padding: 0.5em; border-radius: 0 0 8px 8px; }
+.chat-log { height: 120px; overflow-y: auto; margin-bottom: 0.5em; padding: 0.3em; border: 1px solid #ccc; }
+@media (max-width: 768px) {
+  nav ul { display: none; flex-direction: column; }
+  nav ul.show { display: flex; }
+  .menu-toggle { display: block; }
+}

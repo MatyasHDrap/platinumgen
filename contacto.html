@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Plataforma Plateada</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Plataforma Plateada</h1>
+    <button id="modeToggle">🌙 / ☀️</button>
+  </header>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="foro.html">Foro</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+      <li><a href="calendario.html">Calendario</a></li>
+      <li><a href="asistencia.html">Asistencia</a></li>
+      <li><a href="participar.html">Participar</a></li>
+      <li><a href="contacto.html">Contáctenos</a></li>
+    </ul>
+  </nav>
+  <section class='main scroll-reveal'><h2>Contáctanos</h2><form onsubmit="submitForm(event, 'contacto')"><input type='text' placeholder='Nombre'><input type='email' placeholder='Email'><textarea placeholder='Mensaje'></textarea><button type='submit'>Enviar</button></form><p>Email: contacto@plataformaplateada.org<br>Teléfono: +56 9 1234 5678</p></section>
+  <div id="chat-container">
+    <div id="chat-header" onclick="toggleChat()">💬 Ayuda</div>
+    <div id="chat-box" style="display:none;">
+      <div class="chat-log" id="chat-log"></div>
+      <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+      <button onclick="sendChat()">Enviar</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Plataforma Plateada</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
