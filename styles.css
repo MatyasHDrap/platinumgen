@@ -6,7 +6,7 @@ header { background: var(--primary); color: white; text-align: center; padding: 
 nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; padding: 0; background: var(--bg); }
 nav ul li { margin: 0.5em; }
 nav ul li a { color: var(--primary); text-decoration: none; font-weight: bold; }
-.menu-toggle { display: none; position: absolute; top: 1em; left: 1em; font-size: 2rem; background: none; border: none; color: var(--primary); }
+.menu-toggle { display: none; position: absolute; top: 1em; left: 0em; font-size: 2rem; background: none; border: none; color: var(--fg); }
 section { padding: 2em; max-width: 900px; margin: auto; }
 .main-img { display: block; margin: 1em auto; max-width: 90%; border-radius: 10px; }
 footer { background: var(--primary); color: white; text-align: center; padding: 1em; margin-top: 2em; }
